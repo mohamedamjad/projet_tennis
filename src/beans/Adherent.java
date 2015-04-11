@@ -29,7 +29,7 @@ public class Adherent implements Serializable {
 		Adresse = adresse;
 		Telephone = telephone;
 		Password = password;
-		Login = login;
+		setLogin(login);
 	}
 	
 	// Setters
@@ -82,6 +82,14 @@ public class Adherent implements Serializable {
 	
 	public String getTelephone() {
 		return Telephone;
+	}
+
+	public String getLogin() {
+		return Login;
+	}
+
+	public void setLogin(String login) {
+		Login = login;
 	}
 
 }
